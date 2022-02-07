@@ -18,6 +18,7 @@ ClientView::ClientView():
 ClientView::~ClientView()
 {
 	delete _ui;
+	emit stopAll();
 }
 
 void ClientView::connectSignals()
